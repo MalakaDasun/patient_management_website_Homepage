@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/formStyles.css">
+	<script src="js/myScript.js"></script>
+</head>
+<body>
+<img class="logo" src="images/cart.png" width="200" height="200" alt="Shopping Cart Image">
+<center>
+	<h1>ABC Mobiles</h1>
+	<h3 id="header">The Online Shopping Store</h3>
+<hr id="test"/>
+</center>
+<ul class="menu">
+	<li class="menu"><a href="index.php">Home</a></li>
+	<li class="menu"><a href="news.html">News</a></li>
+	<li class="menu"><a href="#">Contact</a></li>
+	<li class="menu"><a href="about.php">About Us</a></li>
+	<li class="menu"><a href="addItems.html">Add New Items</a></li>
+</ul>
+<br><br/>
+<form action="submitRegistration.php" onSubmit="return checkPassword()" method="POST">
+	First name:<br/>
+	<input type="text" name="firstname" value="First name" required> <br/><br/>
+	Last name:<br/>
+	<input type="text" name="lastname" placeholder="First name" required> <br><br/>
+	Gender:<br/>
+	<input type="radio" name="gender" value="Male" checked> Male 
+	<input type="radio" name="gender" value="Female">Female <br/><br/>
+	Mobile Number:<br/>
+	<input type="phone" name="mobile"  pattern="[0-9]{10}" placeholder="1234567890" required> <br/><br/>
+	E-mail:<br/>
+	<input type="email" name="email" placeholder="abc@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" required> <br><br/>
+	Address:<br/>
+	<textarea name="address" rows="8" cols="50" required></textarea> <br><br/>
+	Choose Your DOB:<br/>
+	<input type="date" name="day" required> <br><br/>
+	Password:<br/>
+	<input type="password" id="pwd" required> <br/><br/>
+	Re-enter Password:<br/>
+	<input type="password" id="cnfrmpwd" required> <br/><br/>
+	<br><input class="inputStyle" id="checkBox" type="checkbox" onclick="enableButton()"> Accept privacy policy and terms.<br/><br/>
+	<center><input type="submit" id="submitBtn" value="Submit" disabled></center>
+</form> 
+
+</body>
+</html>

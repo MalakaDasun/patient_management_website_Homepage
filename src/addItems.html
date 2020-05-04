@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add New Items</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/itemStyles.css">
+	<script src="js/myScript.js"></script>
+</head>
+<body>
+<img class="logo" src="images/cart.png" width="200" height="200" alt="Shopping Cart Image">
+<center>
+	<h1>ABC Mobiles</h1>
+	<h3 id="header">The Online Shopping Store</h3>
+<hr id="test"/>
+</center>
+<ul class="menu">
+	<li class="menu"><a href="index.php">Home</a></li>
+	<li class="menu"><a href="news.html">News</a></li>
+	<li class="menu"><a href="#">Contact</a></li>
+	<li class="menu"><a href="about.php">About Us</a></li>
+	<li class="menu"><a href="#">Add New Items</a></li>
+</ul>
+<br><br/>
+
+<form class="form-style-9" method="POST" action="submitAddItems.php">
+<ul>
+<li>
+    <input type="text" name="field1" class="field-style field-split align-left" placeholder="Item Name" />
+    <input type="text" name="field2" class="field-style field-split align-right" placeholder="Item Code" />
+
+</li>
+<li>
+    <input type="text" name="field3" class="field-style field-split align-left" placeholder="Price" />
+    <input type="number" name="field4" class="field-style field-split align-right" placeholder="Quantity" />
+</li>
+<li>
+<textarea name="field5" class="field-style" placeholder="Description"></textarea>
+</li>
+<li>
+<input type="submit" value="Add Item" />
+</li>
+</ul>
+</form>
+
+</body>
+</html>
